@@ -178,6 +178,25 @@ input[type="search"]:focus {
     gap: 0.5rem;
 }
 
+.btn_flex {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.btn.btn--mod {
+    padding: 0.2rem 0.5rem;
+}
+
+.btn_flex i {
+    font-size: 0.8rem;
+    color: var(--dark-grey);
+}
+
+.ms_table :is(th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3)) {
+    display: none;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -198,6 +217,9 @@ input[type="search"]:focus {
         flex-grow: 3;
     }
 
+    .ms_table :is(th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3)) {
+        display: table-cell;
+    }
 }
 
 @media screen and (min-width: 992px) {
