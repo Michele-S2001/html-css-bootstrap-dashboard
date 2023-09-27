@@ -7,3 +7,55 @@
     --light-grey: #F8F9FA;
     --salmon: #F26551;
 }
+
+/* APP CUSTOM PROPERTIES */
+#app {
+    height: 100vh;
+}
+
+/* NAVIGATION */
+.master .navigation {
+    width: 50px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .master .navigation {
+        width: 150px;
+    }
+}
+
+
+/* DEBUG */
+.debug #app {
+    background-color: green;
+}
+
+/* .debug .toolbar {
+    border: 3px solid black;
+} */
+
+.debug .toolbar {
+    min-height: 50px;
+    background: red;
+}
+
+.debug .navigation {
+    background-color: #1B72E8;
+}
+
+.debug .main-content {
+    background-color: burlywood;
+}
+
+.debug .student-bar {
+    background-color: aqua;
+    height: 50px;
+}
+
+.debug .working-area {
+    border: 2px solid brown;
+}
