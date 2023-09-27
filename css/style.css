@@ -32,6 +32,7 @@ ul,
 ol {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 button {
@@ -88,25 +89,54 @@ figure > img {
     display: none;
 }
 
+/* NAVIGATION MENU */
+.master .ms_nav {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: var(--blue);
+}
 
+.master .ms_nav__items .ms_nav__item {
+    width: 100%;
+    padding: 0 24px;
+    font-size: 1rem;
+}
+
+.ms_nav__items .ms_nav__item a {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ms_nav__item .ms_nav-text {
+    display: none;
+}
+
+.ms_nav__item i {
+    width: 21px;
+    aspect-ratio: 1;
+}
 
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
-    .master .navigation {
+    .master .ms_nav {
         width: 150px;
     }
 
     .toolbar .toolbar__cta-tools .cta-tool:not(.bell) {
         display: block;
     }
+
+    .ms_nav__item .ms_nav-text {
+        display: inline-block;
+    }
 }
 
 
 /* DEBUG */
-.debug #app {
+/* .debug #app {
     background-color: green;
-}
+} */
 
 /* .debug .toolbar {
     border: 3px solid black;
