@@ -6,6 +6,7 @@
     --white: #FFFFFF;
     --grey: #E5E5E5;
     --light-grey: #F8F9FA;
+    --md-grey: #F7F7F7;
     --dark-grey: #5B5858;
     --salmon: #F26551;
     --gold: #FF8F00;
@@ -18,6 +19,10 @@
 
 .bg_white {
     background-color: var(--white);
+}
+
+.bg_md-grey {
+    background-color: var(--md-grey);
 }
 
 /* RESET RULES */
@@ -71,9 +76,22 @@ input[type="search"]:focus {
     white-space: nowrap;
 }
 
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    background-color: var(--salmon);
+    color: var(--white);
+    width: 25px;
+    aspect-ratio: 1 / 1;
+}
+
 /* APP CUSTOM PROPERTIES */
 #app {
     height: 100vh;
+    overflow: hidden;
 }
 
 /* TOOLBAR */
@@ -141,6 +159,26 @@ input[type="search"]:focus {
     display: none;
 }
 
+/* WORKING AREA */
+.working-area {
+    background-color: var(--light-grey);
+}
+
+.ms_card-body {
+    font-size: 0.8rem;
+}
+
+.ms_table {
+    font-weight: 500;
+}
+
+.ms_table .classes .class {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
 
@@ -186,15 +224,3 @@ input[type="search"]:focus {
 }
 
 /* DEBUG */
-
-.debug .navigation {
-    background-color: #1B72E8;
-}
-
-.debug .main-content {
-    background-color: burlywood;
-}
-
-.debug .working-area {
-    border: 2px solid brown;
-}
