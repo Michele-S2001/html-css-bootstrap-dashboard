@@ -16,7 +16,7 @@
 
         <!-- toolbar  -->
         <header class="toolbar bg_light-grey py-2">
-            <ul class="bg_white mb-0 p-1 d-flex align-items-center gap-4">
+            <ul class="bg_white mb-0 py-1 px-3 d-flex align-items-center gap-4">
                 <li>
                     <figure class="mb-0">
                         <img class="xl-logo d-none d-md-block" src="./img/logo.svg" alt=". . .">
@@ -93,7 +93,44 @@
             <!-- main content -->
             <main class="main-content h-100 flex-grow-1 d-flex flex-column">
                 <!-- student bar  -->
-                <div class="student-bar"></div>
+                <div class="student-bar text-light fw-medium overflow-hidden">
+                    <ul class="student-tools-wrapper d-flex flex-column flex-md-row row-gap-4 justify-content-between">
+                        <li class="student-tools d-flex align-items-center gap-3 order-md-1" id="new">
+                            <span>Nuovo Studente</span>
+                            <a href="#" class="btn btn-outline-light">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                        </li>
+                        <li class="student-tools" id="boolean">
+                            <div class="main-title d-flex gap-1 align-items-center">
+                                <h2>Boolean</h2>
+                                <span class="badge badge--mod">Piano blaze</span>
+                            </div>
+                            <div class="apps-menu d-flex align-items-center gap-1">
+                                <span class="badge badge--mod">3 app</span>
+                                <i class="fa-solid fa-angles-right"></i>
+                                <ul class="d-flex align-items-center gap-1">
+                                    <li class="badge_item">
+                                        <span class="badge badge--mod">+</span>
+                                    </li>
+                                    <li class="badge_item">
+                                        <span class="badge badge--mod">Boolean mobile app</span>
+                                    </li>
+                                    <li class="badge_item">
+                                        <span class="badge badge--mod">Boolean web app</span>
+                                    </li>
+                                    <li class="badge_item">
+                                        <span class="badge badge--mod">Boolean blog app</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="student-tools" id="online">
+                            <p class="mb-0">Studenti online negli ultimi 30 minuti</p>
+                            <span class="fs-1">125</span>
+                        </li>
+                    </ul>
+                </div>
                 <!-- ending student bar -->
 
                 <!-- working area  -->
