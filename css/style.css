@@ -5,7 +5,63 @@
     --white: #FFFFFF;
     --grey: #E5E5E5;
     --light-grey: #F8F9FA;
+    --dark-grey: #5B5858;
     --salmon: #F26551;
+    --gold: #FF8F00;
+}
+
+/* BG CUSTOM */
+.bg_light-grey {
+    background-color: var(--light-grey);
+}
+
+.bg_white {
+    background-color: var(--white);
+}
+
+.text-dark-grey {
+    color: var(--dark-grey);
+}
+
+.bell {
+    color: var(--gold);
+}
+
+/* RESET RULES */
+ul,
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+input[type="search"] {
+    border: none;
+    background: none;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* UTILITY CLASSES */
+figure > img {
+    width: 100%;
 }
 
 /* APP CUSTOM PROPERTIES */
@@ -18,6 +74,20 @@
     width: 50px;
 }
 
+/* TOOLBAR */
+.toolbar .mobile-logo {
+    height: 33px;
+    aspect-ratio: 1 / 1;
+}
+
+.toolbar .search-bar {
+    background-color: var(--grey);
+}
+
+.toolbar .toolbar__cta-tools .cta-tool:not(.bell) {
+    display: none;
+}
+
 
 
 
@@ -25,6 +95,10 @@
 @media screen and (min-width: 768px) {
     .master .navigation {
         width: 150px;
+    }
+
+    .toolbar .toolbar__cta-tools .cta-tool:not(.bell) {
+        display: block;
     }
 }
 
@@ -37,11 +111,10 @@
 /* .debug .toolbar {
     border: 3px solid black;
 } */
-
+/* 
 .debug .toolbar {
     min-height: 50px;
-    background: red;
-}
+} */
 
 .debug .navigation {
     background-color: #1B72E8;
@@ -59,3 +132,7 @@
 .debug .working-area {
     border: 2px solid brown;
 }
+
+/* .debug .toolbar ul > li {
+    border: 2px solid black;
+} */

@@ -15,7 +15,46 @@
     <div id="app" class="d-flex flex-column">
 
         <!-- toolbar  -->
-        <aside class="toolbar"></aside>
+        <aside class="toolbar bg_light-grey py-2">
+            <ul class="container-fluid bg_white mb-0 py-1 d-flex align-items-center gap-4">
+                <li>
+                    <figure class="mb-0">
+                        <img class="xl-logo d-none d-md-block" src="./img/logo.svg" alt=". . .">
+                        <img class="mobile-logo d-md-none" src="./img/mobile-logo.png" alt=". . .">
+                    </figure>
+                </li>
+                <li class="flex-grow-1">
+                    <form class="search-bar px-1 py-2 d-flex align-items-center gap-2 rounded-1">
+                        <button><i class="fa-solid fa-magnifying-glass fs-6"></i></button>
+                        <input class="w-100" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+                    </form>
+                </li>
+                <li>
+                    <ul class="toolbar__cta-tools text-dark-grey d-flex gap-4 ">
+                        <li class="cta-tool">
+                            <a href="#">
+                                <i class="fa-solid fa-list-ul"></i>
+                            </a>
+                        </li>
+                        <li class="cta-tool">
+                            <a href="#">
+                                <i class="fa-regular fa-circle-question"></i>
+                            </a>
+                        </li>
+                        <li class="cta-tool">
+                            <a href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </li>
+                        <li class="cta-tool bell">
+                            <a href="#">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
         <!-- ending toolbar -->
 
         <!-- master content -->
