@@ -20,20 +20,16 @@
     background-color: var(--white);
 }
 
-.text-dark-grey {
-    color: var(--dark-grey);
-}
-
-.bell {
-    color: var(--gold);
-}
-
 /* RESET RULES */
 ul,
 ol {
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+}
+
+figure > img {
+    width: 100%;
 }
 
 button {
@@ -63,8 +59,16 @@ input[type="search"]:focus {
 
 
 /* UTILITY CLASSES */
-figure > img {
-    width: 100%;
+.text-dark-grey {
+    color: var(--dark-grey);
+}
+
+.bell {
+    color: var(--gold);
+}
+
+.white-space {
+    white-space: nowrap;
 }
 
 /* APP CUSTOM PROPERTIES */
@@ -147,7 +151,7 @@ figure > img {
     .student-tools#new {
         flex-grow: 1;
     }
-    
+
     .student-tools#online {
         flex-grow: 2;
     }
@@ -159,11 +163,11 @@ figure > img {
 }
 
 @media screen and (min-width: 992px) {
-    .badge_item:first-child {
+    .badge_item.expand {
         display: none;
     }
 
-    .badge_item:not(:first-child) {
+    .badge_item:not(.badge_item.expand) {
         display: block;
     }
 
