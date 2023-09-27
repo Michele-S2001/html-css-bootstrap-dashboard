@@ -43,6 +43,7 @@ button {
 a {
     color: currentColor;
     text-decoration: none;
+    display: block;
 }
 
 input[type="search"] {
@@ -97,8 +98,8 @@ figure > img {
 
 .master .ms_nav__items .ms_nav__item {
     width: 100%;
-    padding: 0 24px;
     font-size: 1rem;
+    padding: 0 24px;
 }
 
 .ms_nav__items .ms_nav__item a {
