@@ -139,11 +139,23 @@ figure > img {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
-    
 
     .toolbar .toolbar__cta-tools .cta-tool:not(.bell) {
         display: block;
     }
+
+    .student-tools#new {
+        flex-grow: 1;
+    }
+    
+    .student-tools#online {
+        flex-grow: 2;
+    }
+
+    .student-tools#boolean {
+        flex-grow: 3;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
