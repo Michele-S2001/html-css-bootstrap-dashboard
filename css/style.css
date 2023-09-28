@@ -63,7 +63,7 @@ input[type="search"]:focus {
 
 ::placeholder {
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -76,7 +76,7 @@ input[type="search"]:focus {
     color: var(--gold);
 }
 
-.white-space {
+.white-space-nowrap {
     white-space: nowrap;
 }
 
@@ -201,6 +201,12 @@ input[type="search"]:focus {
     display: none;
 }
 
+/* FORM */
+.ms_offcanvas.form-w {
+    width: 100%;
+    font-weight: 600;
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -237,7 +243,7 @@ input[type="search"]:focus {
 
     .master .ms_nav {
         width: 150px;
-        padding-left: 20px;
+        padding: 0 20px;
     }
 
     .ms_nav__item .ms_nav-text {
@@ -246,6 +252,10 @@ input[type="search"]:focus {
 
     .ms_nav__items .ms_nav__item a {
         justify-content: flex-start;
+    }
+
+    .ms_offcanvas.form-w {
+        width: 50%;
     }
 }
 

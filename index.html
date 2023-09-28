@@ -47,7 +47,17 @@
                             </a>
                         </li>
                         <li class="cta-tool bell">
-                            <a href="#">
+                            <div class="dropdown">
+                                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                   Dropdown button
+                                </button> -->
+                                <ul class="dropdown-menu">
+                                   <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                   <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                   <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell"></i>
                             </a>
                         </li>
@@ -92,12 +102,89 @@
 
             <!-- main content -->
             <main class="main-content h-100 flex-grow-1 d-flex flex-column overflow-auto">
+                <div class="offcanvas offcanvas-end ms_offcanvas form-w show" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="row g-3 w-100">
+                            <div class="col-sm-6">
+                               <label for="Name" class="form-label">Nome</label>
+                               <input type="text" class="form-control" id="Name">
+                            </div>
+                            <div class="col-sm-6">
+                               <label for="Surname" class="form-label">Cognome</label>
+                               <input type="text" class="form-control" id="Surname">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="email" class="form-control" id="autoSizingInputGroup">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email" class="form-label">Indirizzo Email</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="email" class="form-control" id="autoSizingInputGroup">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="col-12">
+                               <label for="address" class="form-label">Indirizzo</label>
+                               <input type="text" class="form-control" id="address">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="city" class="form-label">Città</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="state" class="form-label">Stato</label>
+                                <select class="form-select" id="state">
+                                   <option selected>Scegli...</option>
+                                   <option value="1">Italia</option>
+                                   <option value="2">Germania</option>
+                                   <option value="3">Francia</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <label for="cap" class="form-label">CAP</label>
+                                <input type="text" class="form-control" id="cap">
+                            </div>
+                            <div class="col-12">
+                               <label for="photo" class="form-label">Foto</label>
+                               <input type="file" class="form-control" id="photo" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Seleziona per proseguire
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                               <button type="submit" class="btn btn-primary fw-medium">Salva</button>
+                               <button type="submit" class="btn btn-warning fw-medium">Svuota</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
                 <!-- student bar  -->
                 <div class="student-bar text-light fw-medium">
                     <ul class="student-tools-wrapper d-flex flex-column flex-md-row row-gap-4 justify-content-between">
                         <li class="student-tools d-flex align-items-center gap-3 order-md-1" id="new">
-                            <span class="white-space">Nuovo Studente</span>
-                            <a href="#" class="btn btn-outline-light">
+                            <span class="white-space-nowrap">Nuovo Studente</span>
+                            <a href="#" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
                         </li>
@@ -145,7 +232,7 @@
                                         <thead>
                                           <tr>
                                             <th scope="col" class="w-50">Nome</th>
-                                            <th scope="col" class="white-space">Data inizio</th>
+                                            <th scope="col" class="white-space-nowrap">Data inizio</th>
                                             <th scope="col">ROI</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
@@ -163,7 +250,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">15 Feb 2021</time>
+                                                    <time class="white-space-nowrap">15 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
@@ -190,7 +277,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">16 Feb 2021</time>
+                                                    <time class="white-space-nowrap">16 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
@@ -217,7 +304,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">18 Feb 2021</time>
+                                                    <time class="white-space-nowrap">18 Feb 2021</time>
                                                 </td>
                                                 <td>
                                                     20%
@@ -246,7 +333,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">19 Feb 2021</time>
+                                                    <time class="white-space-nowrap">19 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
@@ -273,7 +360,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">20 Feb 2021</time>
+                                                    <time class="white-space-nowrap">20 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
@@ -300,7 +387,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">20 Feb 2021</time>
+                                                    <time class="white-space-nowrap">20 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
@@ -327,7 +414,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">21 Feb 2021</time>
+                                                    <time class="white-space-nowrap">21 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
@@ -354,7 +441,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <time class="white-space">22 Feb 2021</time>
+                                                    <time class="white-space-nowrap">22 Feb 2021</time>
                                                 </td>
                                                 <td>20%</td>
                                                 <td>
