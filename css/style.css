@@ -43,9 +43,13 @@ button {
 }
 
 a {
+    display: inline-block;
+}
+
+.ms_nav a,
+.toolbar__cta-tools a {
     color: currentColor;
     text-decoration: none;
-    display: inline-block;
 }
 
 input[type="search"] {
