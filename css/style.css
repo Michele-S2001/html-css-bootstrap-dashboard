@@ -66,6 +66,17 @@ input[type="search"]:focus {
     font-weight: 600;
 }
 
+/* CUSTOM SCROLL BAR */
+::-webkit-scrollbar {
+    background-color: var(--light-grey);
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 99px;
+}
+
 
 /* UTILITY CLASSES */
 .text-dark-grey {
@@ -186,17 +197,11 @@ input[type="search"]:focus {
     gap: 0.5rem;
 }
 
-.btn_flex {
-    display: flex;
-    gap: 0.4rem;
-    align-items: center;
-}
-
 .btn.btn--mod {
     padding: 0.2rem 0.5rem;
 }
 
-.btn_flex i {
+.btn_style i {
     font-size: 0.8rem;
     color: var(--dark-grey);
 }
